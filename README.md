@@ -12,6 +12,53 @@ want to change how microgen lays out files, how it names methods and possibly
 other things. I will try and structure my work such that it can be
 cherry-picked upstream.
 
+## Roadmap
+
+#### Directory and file structure change
+
+I want the default layout to mimick the examples in go-kit, like the [addservice](https://github.com/go-kit/kit/tree/master/examples/addsvc):
+
+```
+addsvc
+├── cmd
+│   ├── addcli
+│   │   └── addcli.go
+│   └── addsvc
+│       ├── addsvc.go
+│       ├── pact_test.go
+│       └── wiring_test.go
+├── pb
+│   ├── addsvc.pb.go
+│   ├── addsvc.proto
+│   └── compile.sh
+├── pkg
+│   ├── addendpoint
+│   │   ├── middleware.go
+│   │   └── set.go
+│   ├── addservice
+│   │   ├── middleware.go
+│   │   └── service.go
+│   └── addtransport
+│       ├── grpc.go
+│       ├── http.go
+│       └── thrift.go
+├── README.md
+└── thrift
+    ├── addsvc.thrift
+    ├── compile.sh
+    └── gen-go
+        └── addsvc
+            ├── add_service-remote
+            │   └── add_service-remote.go
+            ├── addsvc-consts.go
+            ├── addsvc.go
+            └── GoUnusedProtection__.go
+```
+
+#### Other stuff
+
+After the directory/file structure stuff is done I'll have a look at other stuff.
+
 ## Install
 
 ```
