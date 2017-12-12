@@ -3,6 +3,14 @@
 Tool to generate microservices, based on [go-kit](https://gokit.io/), by specified service interface.  
 The goal is to generate code for service which not fun to write but it should be written.
 
+# About this fork
+
+This is a fork of [devimteam/microgen](https://github.com/devimteam/microgen).
+I wanted to experiment a little to see if I could improve on it, but I also
+want to change how microgen lays out files, how it names methods and possibly
+other things. I will try and structure my work such that it can be
+cherry-picked upstream.
+
 ## Install
 ```
 go get -u github.com/devimteam/microgen/cmd/microgen
