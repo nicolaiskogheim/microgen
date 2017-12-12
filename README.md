@@ -36,8 +36,6 @@ generation parameters provides through ["tags"](#tags) in interface docs after g
 | -force | false      | With flag generate stub methods.                                              |
 | -help  | false      | Print usage information                                                       |
 
-\* __Required option__
-
 ### Markers
 Markers is a general tags, that participate in generation process.
 Typical syntax is: `// @<tag-name>:`
