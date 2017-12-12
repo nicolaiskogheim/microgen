@@ -1,7 +1,8 @@
 # Microgen
 
-Tool to generate microservices, based on [go-kit](https://gokit.io/), by specified service interface.  
-The goal is to generate code for service which not fun to write but it should be written.
+Tool to generate microservices from service interfaces, using [go-kit](https://gokit.io/).
+The goal is to be able to generate boilerplate, and keep that boilerplate in sync with
+changes in the service.
 
 # About this fork
 
